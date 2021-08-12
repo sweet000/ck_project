@@ -1,0 +1,22 @@
+add:
+ success:
+  parametername: a, b, except_result
+  parametervalue:
+      - [ 1,1,2 ]
+      - [ 1,0,1 ]
+      - [ 0.1,0.2,0.3 ]
+      - [ -1, 1, 0 ]
+      - [ 100,200,300 ]
+  ids: ['int','zero','float','fushu','big_int']
+
+ fail:
+  parametername: a, b
+  parametervalues:
+    - [ 'a', 'b' ]
+    - [ ！ , . ]
+    - [ '中', '国' ]
+    - [ 1, 'a' ]
+  ids: [ 'string', 'specialChar', 'Chinese', 'integer-string' ]
+
+
+
